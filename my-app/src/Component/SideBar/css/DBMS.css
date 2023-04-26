@@ -1,4 +1,4 @@
-.all-questions {
+.all-questions1 {
     display: flex;
     /* flex-direction: column; */
     width: 100%;
@@ -7,8 +7,8 @@
     width: 100%;
   }
   
-  .all-questions-container {
-    display: flex;
+  .all-questions-container1 {
+    display: inline;
     flex-direction: column;
     flex-direction: row;
     /* align-items: center; */
@@ -16,66 +16,88 @@
     width: 100%;
   }
   
-  .all-questions-left {
-    display: flex;
+  .all-questions-left1 {
+    display: inline;
     margin-right: 30px;
   }
-  
-  .all-options {
-    display: flex;
+  .que1{
+    font-size: 19px;
+   
+  }
+  .all-options1{
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     color: rgba(0, 0, 0, 0.7);
     font-size: small;
+    margin-left: 44px;
   }
   
-  .all-option {
-    display: flex;
+  .all-option1 {
+    display: inline;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: -34px;
+    margin-top: 23px;
+    
   }
   
-  .all-option > p {
+  .all-option1 > p {
     font-size: large;
   }
   
-  .question-answer {
+  .question-answer1 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    margin-left: 175px;
+ 
   }
-  
-  .question-answer > a {
-    color: #0151f0d8;
+ 
+  .question-answer1 > a {
+    color: #094bd0d8;
     font-size: 1.1rem;
     margin-bottom: 10px;
   }
-  .question-answer > a:hover {
+  .question-answer1 > a:hover {
     color: #1649b1d8;
     font-size: 1.1rem;
     margin-bottom: 10px;
   }
   
-  .question-answer > p {
+  .question-answer1 > p {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
   }
   
-  .author {
+  .author1 {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
   
-  .author > small {
+  .author1 > small {
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
   }
-  /* .question-tags{
+    .question-tags1{
+    padding: 4px 5px;
+    background-color: #0151f028;
+    color:  #0151f0d8;
+    border-radius: 2px ;
+  }
+  .question-tags2{
     padding: 3px;
     background-color: #0151f028;
     color:  #0151f0d8;
     border-radius: 2px ;
-  } */
+    margin-left: 6px;
+  }
+  .question-tags3{
+    padding: 3px;
+    background-color: #0151f028;
+    color:  #0151f0d8;
+    border-radius: 2px ;
+    margin-left: 9px;
+  }

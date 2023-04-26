@@ -2,7 +2,9 @@ import React from 'react'
 import { Public, Topic } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import './css/Sidebar.css';
+import { useNavigate } from 'react-router-dom'
 function sidebar() {
+  const navigate = useNavigate()
   return (
     <div className="sidebar">
          <div className="sidebar-container">
@@ -38,7 +40,7 @@ function sidebar() {
                 <div className="tags">
                                   <p>CP</p>
                                   <p>ML</p>
-                                  <p>DSA</p>
+                                 <Link>DSA </Link>
                 </div>
             </div> 
                 </div>

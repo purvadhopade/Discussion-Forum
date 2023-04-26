@@ -32,7 +32,7 @@ function MainQuestion() {
                 </div>
             </div>
             <div className="all-questions">
-            <div className="all-questions-container"></div>
+        <div className="all-questions-container">
             <div className="all-questions-left">
             <div className="all-options">
                     <ArrowDropUpIcon/>
@@ -51,27 +51,44 @@ function MainQuestion() {
                             <p>Author Name</p>
                         </div>
                     </div>
+                    
                             <div className="comments">
-                                    <div className="comment"><p>This is comment</p>
-                                    <span>Username</span><small>Timestamp</small> </div>
-                                    <p onClick={() => setShow(!show)}>Add a comment</p>
+                                    <div className="comment"><p>This is comment <span>Username</span><small>Timestamp</small> </p>
+                                    </div>
+                                    <p onClick={() => setShow(!show)} style={{marginLeft:"-55px",marginTop:"68px"}}>Add a comment</p>
                                     {
                                     show && (<div className="title">
-                                        <textarea 
+                                        <textarea style={{
+                                                       margin: "5px 0px",
+                                                       padding: "10px 50px",
+                                                       border: "1px solid rgba(0, 0, 0, 0.2)",
+                                                       borderRadius: "3px",
+                                                       outline: "none",
+                                                    }}
                                          type="text"
                                          placeholder="Add your comment..."
                                          rows={5}
-                                         style={{}}
                                         ></textarea>
-                                        <button> Add comment</button>
+                                        <button style={{
+                                                     maxWidth: "fit-content",
+                                                }}> Add comment</button>
                                          </div>
                                     )}
 
                            </div>
+            </div>               
             </div>
             </div>
-            <div className="all-questions">
-                <p>No.of answer</p>
+            <div style={{
+            flexDirection: "column",
+          }}
+            className="all-questions">
+                <p style={{
+              marginBottom: "20px",
+              fontSize: "1.3rem",
+              fontWeight: "300",
+            }}
+                >No.of answer</p>
                 <div className="all-questions-container">
                 <div className="all-questions-left">
             <div className="all-options">
@@ -96,13 +113,22 @@ function MainQuestion() {
             </div>
         </div>
         <div className="main-answer">
-            <h3>Your Answer</h3>
+            <h3  style={{
+            fontSize: "22px",
+            margin: "10px 0",
+            fontWeight: "400",
+          }}>Your Answer</h3>
             <ReactQuill className="react-quill" theme="snow" style={{
                height: "200px",  
             }}/>
         </div>
-        <button>Post Your Answer</button>
+        <button style={{
+          marginTop: "100px",
+          maxWidth: "fit-content",
+        }}
+        >Post Your Answer</button>
     </div>
+    
   )
 }
 
